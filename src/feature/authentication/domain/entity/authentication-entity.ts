@@ -1,3 +1,3 @@
-export interface AuthenticationEntity {
+export abstract class AuthenticationEntity {
   credential: any;
 }
