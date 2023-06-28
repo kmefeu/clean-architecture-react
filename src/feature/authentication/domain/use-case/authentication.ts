@@ -1,6 +1,6 @@
 import { UseCase } from "../../../../core/domain/usecase/usecase";
 import { AppError } from "../../../error/domain/entity/appError";
-import { AuthenticationEntity } from "../entity/authenticationEntity";
+import { AuthenticationEntity } from "../entity/authentication-entity";
 
 export interface AuthenticationParams {}
 
