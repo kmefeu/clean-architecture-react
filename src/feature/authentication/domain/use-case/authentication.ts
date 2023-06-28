@@ -1,4 +1,4 @@
-import { UseCase } from "../../../../core/domain/usecase/usecase";
+import { UseCase } from "../../../../core/domain/use-case/use-case";
 import { AppError } from "../../../error/domain/entity/appError";
 import { AuthenticationEntity } from "../entity/authentication-entity";
 
