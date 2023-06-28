@@ -1,12 +1,14 @@
-export interface Authentication {
-  auth: (params: Authentication.Params) => Promise<Authentication.Entity>;
-}
+import { UseCase } from "../../../../core/domain/usecase/usecase";
+import { AppError } from "../../../error/domain/entity/appError";
+import { AuthenticationEntity } from "../entity/authenticationEntity";
 
-export namespace Authentication {
-  export type Params = {
-    email?: string;
-    password?: string;
-  };
+export interface AuthenticationParams {}
 
-  export type Entity = Credential;
+export class Authentication extends UseCase<
+  AuthenticationEntity,
+  AuthenticationParams
+> {
+  call(): AuthenticationEntity | AppError {
+    return new Error();
+  }
 }
